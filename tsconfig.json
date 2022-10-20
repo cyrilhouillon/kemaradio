@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "types": ["node", "jest"],
+    "typeRoots": ["node_modules/@types"],
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@soulseek/*": ["./src/domain/soulseek/*"]
+    }
+  },
+"include": ["./src/**/*"],
+"exclude": ["node_modules", "**/*.spec.ts"]
+}
